@@ -129,3 +129,79 @@ input[type=submit]:hover {
 .fa-youtube {  background: #bb0000;color: white;}
 
 marquee {text-shadow: 0.05em 0.05em #A59FA9; color: #000000; font-size: 50px; font-family: 'Helvetica Neue', sans-serif;}
+
+
+
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+body.night
+{
+    background-image: url("giphy.gif");
+}
+.toggle
+{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active
+{
+    background: #00151f;
+    border: 2px solid #fff;
+}
+.toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle.active:before
+{
+    left: 27px;
+    background: #fff;
+}
+.content
+{
+    margin: 100px auto;
+    width: 1000px;
+}
+.content h1
+{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+}
+.content p
+{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+    font-size: 18px;
+}
+body.night .content h1,
+body.night .content p
+{
+    color: #fff;}
